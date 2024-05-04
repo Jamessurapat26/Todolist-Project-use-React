@@ -1,0 +1,171 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #E3E9FF;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.content-container {
+  margin: 30px;
+  width: 500px;
+  height: 500px;
+  text-align: center;
+}
+
+h2 {
+  color: #FFFFFF;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin: 0;
+  padding: 5px;
+  font-size: 18px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 10px;
+  background-color: #FFFFFF;
+  color: #AF7EEB;
+}
+
+li:hover {
+  background-color: #e0e1e4;
+  cursor: pointer;
+}
+
+
+.opacity {
+  opacity: 0.3;
+  height: 30px;
+  margin: 0;
+}
+
+.header {
+  background-color: #AF7EEB;
+  padding: 5px;
+  text-align: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.content {
+  background-color: #FFFFFF;
+  padding: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.contain-btn-open {
+  display: flex;
+  justify-content: center;
+}
+
+.open-btn {
+  --color: #AF7EEB;
+  font-family: inherit;
+  display: inline-block;
+  width: 8em;
+  height: 2.6em;
+  line-height: 2.5em;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid var(--color);
+  transition: color .5s;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 30px;
+  font-weight: 500;
+  color: var(--color);
+}
+
+.open-btn:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.open-btn:hover {
+  color: #FFFFFF;
+}
+
+.open-btn:before {
+  top: 100%;
+  left: 100%;
+  transition: all .7s;
+}
+
+.open-btn:hover:before {
+  top: -30px;
+  left: -30px;
+}
+
+.open-btn:active:before {
+  background: #AF7EEB;
+  transition: background 0s;
+}
+
+.open-btn {
+  position: absolute;
+}
+
+input[type=text] {
+  border: none;
+  box-shadow: #AF7EEB 0 10px 20px -10px;
+  background-color: rgba(175, 126, 235, 0.3);
+  height: 30px;
+  width: 200px;
+  border-radius: 5px;
+  margin-right: 10px;
+  outline: none;
+  caret-color: #AF7EEB;
+}
+
+input[type=text]:focus {
+  border: 3px solid #AF7EEB;
+}
+
+::placeholder {
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+/* CSS */
+#task button {
+  background: #AF7EEB;
+  border-radius: 999px;
+  box-shadow: #AF7EEB 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+}
+
+input[type=checkbox] {
+  background-color: #eee;
+  margin-right: 10px;
+}
